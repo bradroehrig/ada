@@ -1,0 +1,21 @@
+with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
+with Ada.Float_Text_IO; use Ada.Float_Text_IO;
+
+procedure Hello is
+    Total_purchase : Integer := 500000;
+    InterestRateRaw : Float := 0.00;
+    X : Integer := 10;
+    Y : Float := 10.0;
+    -- Y: Natural := 25;
+    -- Z: Natural := X + Y;
+begin
+    Put_Line("What is the purchase total for this house?");
+    Get(Total_purchase);
+    Put("Total Purchase is:");
+    Put(Total_purchase);
+    --Put(InterestRateRaw);
+    New_line;
+    Put(X);
+    Put(Y);
+end Hello;

@@ -1,0 +1,31 @@
+with Ada.Text_IO;                       use Ada.Text_IO;
+with Ada.Integer_Text_IO;           use Ada.Integer_Text_IO;
+
+procedure MultiplicationTable is
+
+    procedure Print_Multiplication_Table(Number :in Integer; Multiple :in Integer) is
+        Result : Integer;
+        
+    begin
+        for Count in 1 ..Multiple
+        loop
+            Result := Number * Count;
+            Put( Number );
+            Put( " x " );
+            Put( Count );
+            Put( " = " );
+            Put( Result);
+            New_Line(1);
+        end loop; 
+    end Print_Multiplication_Table;
+    Number  :   Integer;
+    Multiple    :   Integer;
+    Number_Test : Integer := 1;
+begin
+    Put_Line("Display the multiplication of number: ");
+    --Get(Number);
+    Put("Display Multiplication until number: ");
+    Get(Multiple);
+    Print_Multiplication_Table(Number,Multiple);
+    Put(Number_Test);
+end MultiplicationTable;
